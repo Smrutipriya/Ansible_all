@@ -1,2 +1,3 @@
 ---
 # tasks file for mytom8role
+- include_tasks: InstallJava.yml

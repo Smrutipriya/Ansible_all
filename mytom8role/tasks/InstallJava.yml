@@ -1,0 +1,8 @@
+---
+- name: i want to download java
+  apt:
+    update_cache: yes
+- name: install the Java Development Kit package with apt-get
+  apt:
+    name: default-jdk
+    state: present
