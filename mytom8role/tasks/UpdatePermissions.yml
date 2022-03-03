@@ -11,7 +11,7 @@
     state: touch
     mode: g+r
     recurse: yes
-- name: give the tomcat group read access to the execute directory
+- name: give the tomcat group execute access to the conf  directory
   file:
     path: /opt/tomcat/conf
     state: touch
