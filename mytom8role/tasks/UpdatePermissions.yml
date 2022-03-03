@@ -1,20 +1,20 @@
 ---
 - name: Give the tomcat group ownership
   file:
-    path: /opt/tomcat
+    path: /opt/tomcat/conf
     group: tomcat
     state: directory
     recurse: yes
 - name: give the tomcat group read access to the conf directory
   file:
     path: /opt/tomcat/conf
-    state: touch
+    state: directory
     mode: g+r
     recurse: yes
 - name: give the tomcat group execute access to the conf  directory
   file:
     path: /opt/tomcat/conf
-    state: touch
+    state: directory
     mode: g+x
 - name: Make the tomcat user the owner of the webapps
   file:
